@@ -1173,3 +1173,237 @@ input[type="email"] {
   left: 25px;
   background-color: rgba(125, 181, 79, 1);
 }
+
+.modal-container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  width: 715px;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 30px;
+}
+
+.modal-button-close {
+  position: absolute;
+  top: 50px;
+  right: 70px;
+  width: 53px;
+  height: 53px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(242, 242, 242, 1);
+  background-image: url(../images/modal-close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-button-close:hover {
+  cursor: pointer;
+}
+
+.modal-content h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  grid-column: span 4;
+}
+
+.modal-content {
+  padding: 70px;
+  padding-top:  58px;
+}
+
+.modal-form {
+  margin-top: 63px;
+  display: grid;
+  align-items: center;
+  row-gap: 40px;
+  grid-template-columns: 1fr 133px 1fr 133px;
+}
+
+.date-input {
+  position: relative;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0;
+  grid-column: span 3;
+  min-width: 420px;
+  min-height: 50px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(242, 242, 242, 1);
+  padding-left: 19px;
+}
+
+.modal-form input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.modal-form label {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.modal-form::placeholder {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.people-count {
+  width: 133px;
+  display: grid;
+  grid-template-columns: 50px 33px 50px;
+  height: 50px;
+}
+
+.people-count input {
+  background-color: rgba(242, 242, 242, 1);
+  border: none;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+
+.minus {
+  border: none;
+  border-radius: 4px 0 0 4px;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.minus::after {
+  display: block;
+  content: "";
+  background-image: url(../images/minus.svg);
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  opacity: 0.3;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.plus {
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.plus::after {
+  display: block;
+  content: "";
+  background-image: url(../images/plus.svg);
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  opacity: 0.3;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.children-label-wrapper {
+  justify-self: center;
+  position: relative;
+  margin-left: 6px;
+}
+
+.children-label-info {
+  display: block;
+  height: 25px;
+  width: 25px;
+  top: 2px;
+  left: 54px;
+  border-radius: 50%;
+  background-color: rgba(131, 179, 211, 1);
+  background-image: url(../images/info.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+}
+
+.modal-button-submit {
+  font-weight: 700;
+  font-size: 20px;
+  grid-column: span 4;
+  border-radius: 10px;
+}
+
+.date-input-wrapper {
+  position: relative;
+  grid-column: span 3;
+}
+
+.calendar-button {
+  position: absolute;
+  border: none;
+  top: 13px;
+  right:11px;
+}
+
+.calendar-button::after {
+  display: block;
+  content: "";
+  background-image: url(../images/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  opacity: 0.3;
+}
+
+.date-text-one,
+.date-text-two {
+  position: absolute;
+  top: 42px;
+}
+
+.date-text-one {
+  position: absolute;
+  color: red;
+}
+
+.children-label-info_text {
+  box-sizing: border-box;
+  border-radius: 10px;
+  position: absolute;
+  width: 256px;
+  min-height: 143px;
+  background-color: rgba(51, 51, 51, 1);
+  color: white;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  padding: 18px 18px 18px 22px;
+  right: -147px;
+}
+
+.children-label-info_text::before {
+  display: block;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background-image: url(../images/triangle.svg);
+  margin-top: -27px;
+  margin-bottom: 3px;
+  margin-left: 96px;
+}

@@ -187,6 +187,52 @@
       </div>
       </footer>
     </div>
+    <div class="modal-container">
+      <div class="modal">
+        <button class="modal-button-close">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2>Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label for="arival">Дата Заезда:</label>
+            <div class="date-input-wrapper">
+            <input class="date-input" type="text" name="arival" id="arival" placeholder="27 апреля 2020">
+            <button class="calendar-button" type="button">
+              <span class="visually-hidden">Календарь</span>
+            </button>
+            <p class="date-text-one">Мы не можем отправить вас в прошлое.</p>
+          </div>
+            <label for="departure">Дата Выезда:</label>
+            <div class="date-input-wrapper">
+            <input class="date-input" type="text" name="departure" id="departure" placeholder="1 сентября 2021">
+            <button class="calendar-button" type="button">
+              <span class="visually-hidden">Календарь</span>
+            </button>
+            <p class="date-text-two">На эти даты есть свободные номера. Пока есть.</p>
+          </div>
+            <label for="adults-count">Взрослые:</label>
+            <span class="people-count">
+              <button class="minus" type="button"></button>
+              <input type="text" name="adults-count" id="adults-count">
+              <button class="plus" type="button"></button>
+            </span>
+            <div class="children-label-wrapper">
+            <label class="children-label" for="children-count">Дети:</label>
+            <span class="children-label-info"></span>
+            <p class="children-label-info_text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+          </div>
+            <span class="people-count">
+              <button class="minus" type="button"></button>
+              <input type="text" name="children-count" id="children-count">
+              <button class="plus" type="button"></button>
+            </span>
+
+            <button class="button button-blue modal-button-submit" type="submit">НАЙТИ</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 
 </html>
